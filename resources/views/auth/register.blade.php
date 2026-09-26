@@ -20,6 +20,7 @@
             </div>
 
             <div class="mt-4">
+<<<<<<< HEAD
                 <x-label for="academic_year" value="{{ __('Academic Year') }}" />
                 <x-input id="academic_year" class="block mt-1 w-full" type="text" name="academic_year" :value="old('academic_year')" placeholder="e.g. 2026 / 2nd Year" />
             </div>
@@ -35,6 +36,8 @@
             </div>
 
             <div class="mt-4">
+=======
+>>>>>>> 5dab0819ecfe3decb616006f6774379b55e6e7d8
                 <x-label for="password" value="{{ __('Password') }}" />
                 <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
             </div>

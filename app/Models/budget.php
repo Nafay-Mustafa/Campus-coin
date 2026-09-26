@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 class Budget extends Model {
@@ -8,3 +9,14 @@ class Budget extends Model {
     public function user(){return $this->belongsTo(User::class);}
     public function category(){return $this->belongsTo(Category::class);}
 }
+=======
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class budget extends Model
+{
+    //
+}
+>>>>>>> 5dab0819ecfe3decb616006f6774379b55e6e7d8

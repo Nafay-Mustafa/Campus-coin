@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Transaction;
@@ -25,3 +26,22 @@ class AdminController extends Controller {
     public function deleteCategory(Category $c){abort_unless(auth()->user()?->is_admin && $c->is_default && is_null($c->user_id),403);$c->delete();return back()->with('success','Default category removed.');}
     public function disableUser(User $u){abort_unless(auth()->user()?->is_admin,403);$u->update(['is_admin'=>$u->is_admin]);session()->flash('success',"User {$u->name} is still available; use your hosting/authentication policy for account suspension.");return back();}
 }
+=======
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class AdminController extends Controller
+{
+   public function datatransfer(Request $req){
+    $name = $req->username;
+    $email = $req->useremail;
+    $pass = $req->userpass;
+    $add = $req->useradd;
+    return view ('User.form');
+
+    }
+    //
+}
+>>>>>>> 5dab0819ecfe3decb616006f6774379b55e6e7d8

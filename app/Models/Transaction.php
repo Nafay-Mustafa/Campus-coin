@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 class Transaction extends Model {
@@ -8,3 +9,14 @@ class Transaction extends Model {
     public function category(){return $this->belongsTo(Category::class);}
     public function suggestedCategory(){return $this->belongsTo(Category::class,'ai_suggested_category');}
 }
+=======
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Transaction extends Model
+{
+    //
+}
+>>>>>>> 5dab0819ecfe3decb616006f6774379b55e6e7d8
